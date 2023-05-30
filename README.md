@@ -1,26 +1,10 @@
 # FaceRecognition
-Face recognition on actors done using VGGFace and FaceNet
+This is a project where face recognition using CNNs is done for 30 actors in the IMDB-WIKI dataset (https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/). From this dataset, I only used the actors in IMDB and not in Wikipedia. 
+All of the images used for these 30 actors were stored in the _train_, _valid_ and _test_ folders. Lots of images were grayscale and had to be removed since the CNN models only accepted colored images as input.
 
-# keras-facenet
-Facenet implementation by Keras2
+The steps for my project were as follows:
+1. Data collection and preprocessing
+2. Face Detection using MTCNN
+3. Face Recognition using VGGFace
+4. Face Recognition using FaceNet
 
-## Pretrained model
-You can quickly start facenet with pretrained Keras model (trained by MS-Celeb-1M dataset).
-- Download model from [here](https://drive.google.com/open?id=1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn) and save it in model/keras/
-
-
-You can also create Keras model from pretrained tensorflow model.
-- Download model from [here](https://github.com/davidsandberg/facenet) and save it in model/tf/
-- Convert model for Keras in [tf_to_keras.ipynb](https://github.com/nyoki-mtl/keras-facenet/blob/master/notebook/tf_to_keras.ipynb)
-
-
-## Demo
-- [Face vector calculation](https://github.com/nyoki-mtl/keras-facenet/blob/master/notebook/demo-images.ipynb)
-- [Classification with SVM](https://github.com/nyoki-mtl/keras-facenet/blob/master/notebook/demo-svm.ipynb)
-- [Web camera demo](https://github.com/nyoki-mtl/keras-facenet/blob/master/notebook/demo-webcam.ipynb)
-
-## Environments
-Ubuntu16.04 or Windows10  
-python3.6.2  
-tensorflow: 1.3.0  
-keras: 2.1.2  
