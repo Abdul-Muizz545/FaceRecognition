@@ -4,7 +4,7 @@ All of the images used for these 30 actors (15 male and 15 female of varying ski
 
 The dataset folder I used can be found here: [Dataset I used (Google Drive link)](https://drive.google.com/drive/folders/1dvPUVQG49epamQyqDUU34-RZqyRnmc4b)
 
-# Steps for project:
+## Steps for project:
 1. Data collection and preprocessing
 2. Face Detection using MTCNN
 3. Face Recognition using VGGFace models
